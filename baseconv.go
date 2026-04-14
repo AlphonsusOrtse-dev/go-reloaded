@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strconv"
 	"strings"
 )
@@ -36,9 +35,4 @@ func binToDec(str string) string {
 
 	}
 	return strings.Join(word, " ")
-}
-
-func main() {
-	fmt.Println(HexToDec("1E (hex) files were added"))
-	fmt.Println(binToDec("It has been 10 (bin) years"))
 }
