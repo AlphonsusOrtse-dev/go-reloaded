@@ -22,6 +22,7 @@ func main() {
 	result := conv(data)
 	result = HexToDec(result)
 	result = binToDec(result)
+	result = fixArticles(result)
 
 	err = os.WriteFile(outputFile, []byte(result), 0644)
 	if err != nil {
